@@ -8,18 +8,39 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, CanReceive {
 
 	override func viewDidLoad() {
+
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+		receivedData.isHidden = true
+		
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
+	@IBOutlet var textField: UITextField!
+	@IBOutlet var receivedData: UILabel!
+	
+	@IBAction func buttonPressed(_ sender: UIButton) {
+		
+		performSegue(withIdentifier: "gotoSecondScreen", sender: self)
+		 
 	}
-
-
+	
+	func dataReceived(data: String) {
+		receivedData.isHidden = false
+		receivedData.text = data
+	}
+	
+	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+		if segue.identifier == "gotoSecondScreen" {
+			
+			let destinationVC = segue.destination as! SecondViewController
+			destinationVC.data = textField.text!
+			
+			destinationVC.delegate = self
+			
+		}
+	}
+	
 }
 
