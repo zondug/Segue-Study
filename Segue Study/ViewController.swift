@@ -25,7 +25,7 @@ class ViewController: UIViewController, CanReceive {
 	@IBAction func buttonPressed(_ sender: UIButton) {
 		
 		performSegue(withIdentifier: "gotoSecondScreen", sender: self)
-		 
+		
 	}
 	
 	// 2 -> 1 일 때 호출되는 내용들, from protocol

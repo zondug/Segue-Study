@@ -16,6 +16,7 @@
 		EE9CCCB5200360ED00AD7D08 /* Segue_StudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CCCB4200360ED00AD7D08 /* Segue_StudyTests.swift */; };
 		EE9CCCC0200360ED00AD7D08 /* Segue_StudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CCCBF200360ED00AD7D08 /* Segue_StudyUITests.swift */; };
 		EE9CCCCE2003622100AD7D08 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CCCCD2003622100AD7D08 /* SecondViewController.swift */; };
+		EEB38B9B2009102D0072C43F /* Transitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEB38B9A2009102D0072C43F /* Transitions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		EE9CCCBF200360ED00AD7D08 /* Segue_StudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue_StudyUITests.swift; sourceTree = "<group>"; };
 		EE9CCCC1200360ED00AD7D08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE9CCCCD2003622100AD7D08 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		EEB38B9A2009102D0072C43F /* Transitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transitions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 			children = (
 				EE9CCC9C200360ED00AD7D08 /* AppDelegate.swift */,
 				EE9CCC9E200360ED00AD7D08 /* ViewController.swift */,
+				EEB38B9A2009102D0072C43F /* Transitions.swift */,
 				EE9CCCCD2003622100AD7D08 /* SecondViewController.swift */,
 				EE9CCCA0200360ED00AD7D08 /* Main.storyboard */,
 				EE9CCCA6200360ED00AD7D08 /* Assets.xcassets */,
@@ -266,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EE9CCCA5200360ED00AD7D08 /* Segue_Study.xcdatamodeld in Sources */,
+				EEB38B9B2009102D0072C43F /* Transitions.swift in Sources */,
 				EE9CCC9F200360ED00AD7D08 /* ViewController.swift in Sources */,
 				EE9CCCCE2003622100AD7D08 /* SecondViewController.swift in Sources */,
 				EE9CCC9D200360ED00AD7D08 /* AppDelegate.swift in Sources */,

@@ -53,7 +53,7 @@
                     <connections>
                         <outlet property="receivedData" destination="9S7-uZ-VDd" id="t95-MX-nLN"/>
                         <outlet property="textField" destination="oKB-zK-pct" id="87c-iq-b6g"/>
-                        <segue destination="Lmb-C9-2xD" kind="show" identifier="gotoSecondScreen" id="8bS-ib-gPN"/>
+                        <segue destination="Lmb-C9-2xD" kind="show" identifier="gotoSecondScreen" customClass="Transitions" customModule="Segue_Study" customModuleProvider="target" id="8bS-ib-gPN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
