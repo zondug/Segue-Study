@@ -14,6 +14,8 @@ enum AnimationType {
 }
 
 class Transitions: UIStoryboardSegue {
+	
+	let animation = Animations()
 
 //	open var duration = 0.1
 	
@@ -51,6 +53,7 @@ class Transitions: UIStoryboardSegue {
 		)
 	}
 	
+	// Animation group을 써야 하나보다
 	func animateSpiral() {
 		let fromVC = self.source
 		let toVC = self.destination
@@ -63,11 +66,17 @@ class Transitions: UIStoryboardSegue {
 		
 		containerView?.addSubview(toVC.view)
 		
-		UIView.animate(withDuration: 0.5, delay: 0,
-					   animations: {
-						
-		},
-					   completion: {success in fromVC.present(toVC, animated: false, completion: nil)})
+		UIView.animateKeyframes(withDuration: 2, delay: 0, options: [], animations: {
+			UIView.addKeyframe(withRelativeStartTime: 0, relativeDuration: 0.5, animations: {
+
+				
+			})
+			UIView.addKeyframe(withRelativeStartTime: 0.5, relativeDuration: 0.5, animations: {
+
+			})
+		}, completion: {
+			success in fromVC.present(toVC, animated: false, completion: nil)}
+		)
 	}
 	
 }

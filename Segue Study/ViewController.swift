@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController, CanReceive {
 
+	let animation = Animations()
+	
 	override func viewDidLoad() {
 
 		super.viewDidLoad()
@@ -20,6 +22,10 @@ class ViewController: UIViewController, CanReceive {
 	// 오브젝트 정의
 	@IBOutlet var textField: UITextField!
 	@IBOutlet var receivedData: UILabel!
+	
+	@IBAction func animationBtn(_ sender: UIButton) {
+		
+	}
 	
 	// 버튼 액션 정의 1 -> 2
 	@IBAction func buttonPressed(_ sender: UIButton) {

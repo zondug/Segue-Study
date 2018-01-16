@@ -26,7 +26,7 @@ class SecondViewController: UIViewController {
 		
 		// 1 -> 2로 넘어온 data를 label에 넣음
 		label.text = data
-		
+
 	}
 	@IBOutlet var label: UILabel!
 	

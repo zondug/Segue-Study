@@ -20,33 +20,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BzL-D8-0yU">
-                                <rect key="frame" x="162" y="342" width="51" height="30"/>
+                                <rect key="frame" x="0.0" y="342" width="375" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Foward"/>
                                 <connections>
                                     <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="maB-Uh-c0B"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Nickname" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oKB-zK-pct">
-                                <rect key="frame" x="144.66666666666666" y="304" width="86" height="30"/>
-                                <color key="textColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" textContentType="nickname"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="Nickname" borderStyle="roundedRect" textAlignment="center" clearsOnBeginEditing="YES" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="oKB-zK-pct">
+                                <rect key="frame" x="0.0" y="298" width="375" height="36"/>
+                                <color key="textColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="nickname"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Got data from Previus" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9S7-uZ-VDd">
-                                <rect key="frame" x="104" y="396" width="167" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Got data from Previous" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9S7-uZ-VDd">
+                                <rect key="frame" x="0.0" y="396" width="375" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lD2-bs-vAt">
+                                <rect key="frame" x="0.0" y="591" width="375" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <state key="normal" title="Animation"/>
+                                <connections>
+                                    <action selector="animationBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kFP-P9-jxT"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ck3-7R-Dha"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="BzL-D8-0yU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4zi-F2-dU7"/>
+                            <constraint firstItem="oKB-zK-pct" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="6ek-4r-OiD"/>
+                            <constraint firstItem="oKB-zK-pct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AIu-av-K99"/>
+                            <constraint firstItem="9S7-uZ-VDd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DaX-FC-6H9"/>
+                            <constraint firstItem="lD2-bs-vAt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="F8V-Mv-ot5"/>
                             <constraint firstItem="BzL-D8-0yU" firstAttribute="top" secondItem="oKB-zK-pct" secondAttribute="bottom" constant="8" id="Ky7-8b-QJD"/>
+                            <constraint firstItem="9S7-uZ-VDd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SMe-Am-KDS"/>
                             <constraint firstItem="BzL-D8-0yU" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="298" id="Upa-gB-qbW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BzL-D8-0yU" secondAttribute="trailing" constant="162" id="c5T-7k-52y"/>
                             <constraint firstItem="oKB-zK-pct" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="caB-k3-upL"/>
-                            <constraint firstItem="BzL-D8-0yU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="162" id="rdu-Xw-Xd7"/>
+                            <constraint firstItem="lD2-bs-vAt" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="591" id="dCh-vO-UP7"/>
+                            <constraint firstItem="BzL-D8-0yU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dtk-da-gGv"/>
+                            <constraint firstItem="lD2-bs-vAt" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="h1B-F2-GFq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -69,7 +85,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kF9-rz-Gog">
-                                <rect key="frame" x="170" y="342" width="34" height="30"/>
+                                <rect key="frame" x="0.0" y="342" width="375" height="44"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="button:" destination="Lmb-C9-2xD" eventType="touchUpInside" id="ye4-W9-Onm"/>
@@ -77,19 +94,22 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFB-uJ-W4F">
-                                <rect key="frame" x="166.66666666666666" y="313" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="0.0" y="302.66666666666669" width="375" height="31.333333333333314"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.83234566450000003" blue="0.47320586440000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kF9-rz-Gog" firstAttribute="leading" secondItem="NnZ-yi-nOe" secondAttribute="leading" constant="170" id="4kN-FW-0TL"/>
                             <constraint firstItem="ZFB-uJ-W4F" firstAttribute="centerX" secondItem="NnZ-yi-nOe" secondAttribute="centerX" id="4vE-5p-STv"/>
                             <constraint firstItem="kF9-rz-Gog" firstAttribute="top" secondItem="ZFB-uJ-W4F" secondAttribute="bottom" constant="8" id="EPG-MU-oxS"/>
+                            <constraint firstItem="ZFB-uJ-W4F" firstAttribute="trailing" secondItem="NnZ-yi-nOe" secondAttribute="trailing" id="PLQ-fj-lIL"/>
+                            <constraint firstItem="kF9-rz-Gog" firstAttribute="top" secondItem="NnZ-yi-nOe" secondAttribute="top" constant="298" id="ZNz-qH-trF"/>
                             <constraint firstItem="kF9-rz-Gog" firstAttribute="top" secondItem="FjK-oq-n48" secondAttribute="topMargin" constant="298" id="gfT-cS-yiE"/>
-                            <constraint firstItem="NnZ-yi-nOe" firstAttribute="trailing" secondItem="kF9-rz-Gog" secondAttribute="trailing" constant="171" id="lWd-yf-PAV"/>
+                            <constraint firstItem="kF9-rz-Gog" firstAttribute="leading" secondItem="NnZ-yi-nOe" secondAttribute="leading" id="s7y-5G-HaE"/>
+                            <constraint firstItem="kF9-rz-Gog" firstAttribute="trailing" secondItem="NnZ-yi-nOe" secondAttribute="trailing" id="yYA-7T-uFb"/>
+                            <constraint firstItem="ZFB-uJ-W4F" firstAttribute="leading" secondItem="NnZ-yi-nOe" secondAttribute="leading" id="ybL-6j-f1g"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="NnZ-yi-nOe"/>
                     </view>
@@ -99,7 +119,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kgt-Zs-f11" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="940" y="132.68365817091455"/>
+            <point key="canvasLocation" x="940" y="132.26600985221674"/>
         </scene>
     </scenes>
 </document>

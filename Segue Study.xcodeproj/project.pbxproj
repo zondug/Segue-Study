@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE1BC075200E06A600A96D4C /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE1BC074200E06A600A96D4C /* Animations.swift */; };
 		EE9CCC9D200360ED00AD7D08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CCC9C200360ED00AD7D08 /* AppDelegate.swift */; };
 		EE9CCC9F200360ED00AD7D08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9CCC9E200360ED00AD7D08 /* ViewController.swift */; };
 		EE9CCCA2200360ED00AD7D08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE9CCCA0200360ED00AD7D08 /* Main.storyboard */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EE1BC074200E06A600A96D4C /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		EE9CCC99200360ED00AD7D08 /* Segue Study.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Segue Study.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE9CCC9C200360ED00AD7D08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE9CCC9E200360ED00AD7D08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				EE9CCC9C200360ED00AD7D08 /* AppDelegate.swift */,
 				EE9CCC9E200360ED00AD7D08 /* ViewController.swift */,
 				EEB38B9A2009102D0072C43F /* Transitions.swift */,
+				EE1BC074200E06A600A96D4C /* Animations.swift */,
 				EE9CCCCD2003622100AD7D08 /* SecondViewController.swift */,
 				EE9CCCA0200360ED00AD7D08 /* Main.storyboard */,
 				EE9CCCA6200360ED00AD7D08 /* Assets.xcassets */,
@@ -270,6 +273,7 @@
 			files = (
 				EE9CCCA5200360ED00AD7D08 /* Segue_Study.xcdatamodeld in Sources */,
 				EEB38B9B2009102D0072C43F /* Transitions.swift in Sources */,
+				EE1BC075200E06A600A96D4C /* Animations.swift in Sources */,
 				EE9CCC9F200360ED00AD7D08 /* ViewController.swift in Sources */,
 				EE9CCCCE2003622100AD7D08 /* SecondViewController.swift in Sources */,
 				EE9CCC9D200360ED00AD7D08 /* AppDelegate.swift in Sources */,
